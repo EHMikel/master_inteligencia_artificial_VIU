@@ -1,0 +1,101 @@
+(deftemplate desv_tipica
+	0 4
+	(
+		(baja (0 1) (0.5 1) (1.5 0))
+		(media (1 0) (2 1) (3 0))
+		(alta (2 0) (3 1) (4 1))
+	)
+)
+
+
+(deftemplate patron_reversion
+	0 10
+	(
+		(malo (0 1) (2 1) (4 0))
+		(promedio (3 0) (6 1) (9 0))
+		(perfecto (6 0) (9 1) (10 1))
+	)
+)
+
+(deftemplate calidad_de_operacion_en_reversion
+	0 100
+	(
+		(mala (0 1) (20 1) (50 0))
+		(aceptable (40 0) (60 1) (80 0))
+		(buena (60 0) (75 1) (90 0))
+		(de_libro (80 0) (100 1))
+	)
+)
+
+
+
+
+
+(defrule regla_1
+	(desv_tipica baja)
+	(patron_reversion malo)
+=>
+	(assert (calidad_de_operacion_en_reversion mala))
+)
+
+(defrule regla_2
+	(desv_tipica media)
+	(patron_reversion malo)
+=>
+	(assert (calidad_de_operacion_en_reversion mala))
+)
+
+
+(defrule regla_3
+	(desv_tipica alta)
+	(patron_reversion malo)
+=>
+	(assert (calidad_de_operacion_en_reversion aceptable))
+)
+
+(defrule regla_4
+	(desv_tipica baja)
+	(patron_reversion promedio)
+=>
+	(assert (calidad_de_operacion_en_reversion mala))
+)
+
+
+(defrule regla_5
+	(desv_tipica media)
+	(patron_reversion promedio)
+=>
+	(assert (calidad_de_operacion_en_reversion aceptable))
+)
+
+
+(defrule regla_6
+	(desv_tipica alta)
+	(patron_reversion promedio)
+=>
+	(assert (calidad_de_operacion_en_reversion buena))
+)
+
+
+(defrule regla_7
+	(desv_tipica baja)
+	(patron_reversion perfecto)
+=>
+	(assert (calidad_de_operacion_en_reversion aceptable))
+)
+
+
+(defrule regla_8
+	(desv_tipica media)
+	(patron_reversion perfecto)
+=>
+	(assert (calidad_de_operacion_en_reversion buena))
+)
+
+
+(defrule regla_9
+	(desv_tipica alta)
+	(patron_reversion perfecto)
+=>
+	(assert (calidad_de_operacion_en_reversion de_libro))
+)

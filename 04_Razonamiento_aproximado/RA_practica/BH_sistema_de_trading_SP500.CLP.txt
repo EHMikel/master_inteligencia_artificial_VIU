@@ -1,0 +1,4 @@
+(deffacts hechos
+	(desv_tipica (2.75 0) (2.75 1) (2.75 0))
+	(patron_reversion (8 0) (8 1) (8 0))
+)
