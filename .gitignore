@@ -1,0 +1,10 @@
+# Ignorar archivos de video
+*.mp4
+
+# Ignorar archivos comprimidos
+*.tar
+*.zip
+
+
+# Ignorar archivos de configuración de entorno
+*.env

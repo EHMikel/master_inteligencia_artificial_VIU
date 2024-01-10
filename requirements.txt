@@ -1,0 +1,33 @@
+# las dependencias principales para IA
+# puede haber otras dependencias más especificas en cada asignatura
+# la asignatura de reinforcement learning tiene su propio versionado
+
+# jupyter notebooks
+ipykernel
+notebook
+
+# manipulacion y analisis de datos
+pandas
+numpy
+
+# visualización de datos
+matplotlib
+seaborn
+
+# machine learning
+scikit-learn
+
+# fuzzy logic and control
+scikit-fuzzy
+
+# deep learning, no se incluye pythorch aqui
+tensorflow==2.10
+
+# computer vision
+opencv-python
+scikit-image
+Pillow
+imageio
+
+# manejo de configuraciones y variables de entorno
+python-decouple
