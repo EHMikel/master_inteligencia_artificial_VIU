@@ -1,0 +1,5 @@
+Carne
+Fruta
+Pescado
+Manzana
+Pera
