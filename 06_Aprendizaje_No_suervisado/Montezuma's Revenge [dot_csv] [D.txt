@@ -1,0 +1,1749 @@
+bien cargado el café
+
+wow
+
+quizás recuerden que hace unas semanas
+
+subió un vídeo de noticias bueno
+
+realmente hace un mes y pico
+
+subí un vídeo de noticias en el que por
+
+primera vez les propuse una cosa y era
+
+que aquellos que fueran patrios del
+
+canal aquellos que están apoyando
+
+financieramente este proyecto el dedo
+
+csv pues un poco como recompensa a su
+
+aporte tenían la oportunidad de elegir
+
+de todas las noticias que presenté en
+
+ese vídeo en el vídeo de noticias de
+
+septiembre octubre noviembre y que
+
+eligieron aquellas que le parecieran más
+
+interesante entre todas las noticias
+
+propuestas fueron ustedes los patrones
+
+los que decidieron que la noticia que
+
+tenemos que tratar hoy en este data
+
+coffee era la de go explorer que es esa
+
+inteligencia artificial que ha creado
+
+über lapse y que ha supuesto un hito en
+
+el campo del aprendizaje reforzado al
+
+conseguir una puntuación récord por
+
+encima de lo que se había conseguido
+
+hasta el momento en el juego montes o
+
+más
+
+revenge hoy les recomiendo que se
+
+preparen un café bastante fuerte porque
+
+viene un tema muy interesante comenzamos
+
+en esa lista de futuros retos se
+
+encontraba un juego llamado monte sumas
+
+revenge uno de los juegos más
+
+complicados del atari y en el que sólo
+
+un algoritmo había
+
+capaz de superar el primer nivel y donde
+
+nunca nadie antes había superado la
+
+puntuación de 17.500 puntos ahora un
+
+nuevo algoritmo desarrollado por uber
+
+lab y denominado go explorer ha
+
+conseguido mejorar esto mejorarlo por
+
+mucho
+
+superando el segundo tercer y cuarto a
+
+nivel
+
+y el décimo y el número 58 y de darle la
+
+vuelta al marcador con más de un millón
+
+de puntos y de dársela a una segunda vez
+
+con más de dos millones de puntos
+
+vamos sin duda de dominar completamente
+
+este juego esta nueva arquitectura
+
+desarrollada supone un nuevo hito en el
+
+campo del aprendizaje reforzado y
+
+promete allanar el camino en la
+
+resolución de problemas complejos donde
+
+la recompensa es escasa y dispersa en el
+
+árbol de búsqueda algo que tiene su
+
+utilidad por ejemplo en su uso para
+
+resolver problemas de aprendizaje con
+
+robots como vemos hoy vamos a hablar de
+
+go explorer un algoritmo que da un salto
+
+cualitativo a la investigación del campo
+
+de aprendizaje reforzado al haber
+
+superado el récord en este juego lo que
+
+vamos a hacer va a ser desgranar el cómo
+
+lo ha hecho y también vamos a ver un
+
+poco de controversia que ha ido
+
+desarrollándose durante las últimas
+
+semanas y también motivos por los cuales
+
+me ha costado tanto sacar este vídeo
+
+adelante y es que es un tema que ha ido
+
+evolucionando semana tras semana con
+
+diferentes actualizaciones por parte de
+
+los autores con parte de quejas de la
+
+comunidad científica todo eso lo vamos a
+
+ver en el vídeo de hoy así que vamos a
+
+comenzar el primer punto en el que
+
+habría que parar
+
+es entender realmente qué es eso de
+
+aprendizaje reforzado si recuerdan en el
+
+canal hace ya un año y pico madre mía
+
+sobre un vídeo en el que contaba cuáles
+
+eran los diferentes paradigmas del
+
+aprendizaje dentro del machine learning
+
+es decir las diferentes maneras que
+
+tenemos para clasificar nuestros
+
+algoritmos a la hora de de la manera en
+
+la que aprenden vale estos aprendizajes
+
+eran aprendizaje supervisado o
+
+aprendizaje no supervisado y aprendizaje
+
+reforzado estos no son los tres únicos
+
+paradigmas pero sí son los tres
+
+principales si no recuerdan bien el
+
+contenido de ese vídeo pues les
+
+recomiendo que vayan a verlo hasta por
+
+aquí arriba el link pero si no también
+
+vamos a hacer un recordatorio rápido el
+
+aprendizaje supervisado es este
+
+aprendizaje donde tú le muestras al
+
+algoritmo ejemplos de lo que quieres
+
+conseguir es decir tú tienes datos de
+
+entrada y dos de salida y tú lo que
+
+quieres es que el algoritmo aprenda la
+
+relación entre el proyecto tanto técnico
+
+por ejemplo tú puedes tener imágenes de
+
+gatos y de perros y puedes tener
+
+etiquetas que digan que esta foto de
+
+aquí son gatos y perros con el paso del
+
+tiempo el algoritmo deberá de aprender a
+
+asociar estas dos fuentes de datos por
+
+otro lado la forma antagónica de este
+
+tipo de aprendizaje
+
+no supervisado que obviamente es aquel
+
+en el que no le mostramos ningún ejemplo
+
+de salida de lo que queremos conseguir
+
+esto a priori puede parecer extraño pero
+
+realmente créeme que se pueden hacer
+
+muchísimas cosas solamente con los datos
+
+de entrada por ejemplo podrías intentar
+
+buscar similaridades entre los datos
+
+hacer clusterización e intentar
+
+comprimir tus datos
+
+todo esto lo puedes hacer sin necesidad
+
+de tener una señal de salida y es de lo
+
+que se ocupa el campo o el paradigma del
+
+aprendizaje no supervisado si se dan
+
+cuenta en este canal casi siempre nos
+
+hemos centrado en hablar del aprendizaje
+
+supervisado y en parte en alguna ocasión
+
+del aprendizaje en la supervisado
+
+pero incluso en aquel vídeo donde
+
+hablaba de los tres paradigmas nunca
+
+llegué a hablar sobre lo que era el
+
+aprendizaje reforzado con suerte este
+
+año podré centrarme más en esto y
+
+tratarlo en más profundidad porque es un
+
+campo bastante interesante y que puede
+
+ser la llave del futuro del machine
+
+learning en este caso en el aprendizaje
+
+reforzado el output que queremos que
+
+prediga a nuestro algoritmo de machine
+
+learning o nuestro agente en este caso
+
+es una secuencia de acción es una
+
+secuencia de acciones que serán
+
+ejecutadas dentro de un entorno de
+
+simulación
+
+con el objetivo de que se tenga que
+
+realizar una determinada tarea por la
+
+cual nuestro agente va a ser
+
+recompensado en caso de que haga la
+
+tarea correctamente o penalizado en caso
+
+de que la haga mal esto si lo piensas se
+
+parece bastante a cómo aprendemos
+
+nosotros en la naturaleza cuando eres
+
+pequeño la forma en la que aprendes a
+
+caminar por ejemplo es pues que gateando
+
+y cayendo te muchas veces hasta que poco
+
+a poco vamos entendiendo de alguna
+
+manera y nos vamos
+
+reconfigurando internamente para poder
+
+ir haciendo esa tarea cada vez mejor y
+
+claro en ese caso la señal de recompensa
+
+que serían nuestros padres aplaudiendo y
+
+diciéndonos muy bien muy bien harán que
+
+poco a poco nosotros pues vayamos
+
+levantando nos y empezando a dar
+
+nuestros primeros pasos esto es muy
+
+interesante porque lo que estamos
+
+hablando aquí es que ya no tenemos que
+
+diseñar un experimento donde tenemos que
+
+seleccionar datos de entrada y datos de
+
+salida sino que lo único que hacemos es
+
+definir una tarea resolver dentro de un
+
+framework dentro de un espacio una
+
+simulación y nuestra gente va a empezar
+
+a desenvolverse a explorar y a explotar
+
+su conocimiento para intentar cada vez
+
+hacer mejor la tarea y creo que queda
+
+muy claro porque esto es muy
+
+interesante dentro del campo del machine
+
+learning claro de esta forma de
+
+aprendizaje nos plantea una gente
+
+inteligente un entorno de simulación un
+
+objetivo a cumplir recompensas y
+
+rápidamente la cabeza nos empieza a
+
+pensar que estos elementos son los que
+
+también nos encontramos en los
+
+videojuegos utilizamos estos videojuegos
+
+como si fueran una especie de reto a
+
+resolver de un entorno de simulación
+
+donde nuestros agentes inteligentes
+
+tienen que resolver esa tarea
+
+determinada y es por eso por lo que con
+
+frecuencia se utilizan estos videojuegos
+
+para establecer pues nuevos hitos dentro
+
+del campo de aprendizaje reforzado que
+
+son los que llegan luego a la prensa
+
+escrita a la prensa mainstream y que
+
+todos conocemos por eso vemos que
+
+inteligencias artificiales que consiguen
+
+un rendimiento súper o humano jugando al
+
+ajedrez jugando al go o jugando al
+
+starcraft 2 y es por eso que en ese
+
+sentido también los grandes laboratorios
+
+de inteligencia artificial como open ya
+
+jodi mind han sacado sus propias
+
+plataformas para que nosotros seamos los
+
+que desarrollamos pues nuestros propios
+
+algoritmos de aprendizajes reforzados
+
+sobre una gran variedad de juegos que
+
+ellos aportan
+
+de todos modos no te creas que todo esto
+
+trata sobre resolver juegos lo que
+
+estamos haciendo aquí es utilizar estos
+
+juegos para luego desarrollar algoritmos
+
+que podamos traspasar al mundo real a
+
+resolver problemas más importantes como
+
+por ejemplo el campo de la robótica el
+
+campo de la robótica es uno de esos
+
+campos que se benefician bastante de los
+
+avances en aprendizaje reforzado ya que
+
+lo que queremos es que nuestros robots
+
+aprendan a resolver una tarea
+
+determinada simplemente en base a ensayo
+
+y error de una manera adaptativa la
+
+buena noticia es que durante los últimos
+
+años este es un campo que ha ido ganando
+
+tracción y momentum y donde se han ido
+
+viviendo una serie de avances que
+
+también han sido muy interesantes al
+
+igual que el campo del machine learning
+
+ha evolucionado para integrar todo lo
+
+que está relacionado con redes
+
+neuronales que sería el paso del machine
+
+learning al deep learning
+
+el campo de aprendizaje reforzado
+
+también ha visto pues esa integración de
+
+las redes neuronales dentro de sus
+
+arquitecturas en lo que se conocería
+
+como el deep
+
+rainford cement learning o aprendizaje
+
+reforzado profundo y fue en febrero de
+
+2015 cuando una empresa poco conocida
+
+como the mind publicó en una revista
+
+poco conocida como neytiri un artículo
+
+que fue esto
+
+dentro del aprendizaje reforzado este
+
+presentaba una nueva arquitectura un
+
+nuevo algoritmo de aprendizaje reforzado
+
+que era capaz de aprender a resolver
+
+múltiples juegos del atari 2600 con un
+
+rendimiento superman o quizás muchos
+
+hayan visto este ejemplo de este juego
+
+de aquí donde la gente inteligente la
+
+pala en este caso es capaz de aprender
+
+estrategias avanzadas que incluso
+
+nosotros los humanos solemos utilizar
+
+como la típica de hacerte el huequito en
+
+el lateral entre el bloque y la pared
+
+para intentar colar la pelota y que vaya
+
+rebotando contra el techo y maximizar
+
+así la recompensa pero como digo este
+
+algoritmo no sólo era capaz de resolver
+
+este juego de aquí sino que era capaz de
+
+resolver múltiples juegos de hecho en el
+
+artículo original mostraban esta gráfica
+
+donde podemos ver como todos estos
+
+juegos de aquí eran resueltos por este
+
+algoritmo con un rendimiento súper mano
+
+tenemos el break out que acabamos de ver
+
+también tenemos el pong tenemos el space
+
+invaders todos ellos por encima del
+
+rendimiento super humano sin embargo lo
+
+interesante viene cuando empezamos a
+
+bajar por esta lista de juegos y nos
+
+vamos fijando en cuáles son aquellos que
+
+le cuesta más resolver adecúen al final
+
+de esta lista hay un juego para el cual
+
+este algoritmo ha sido incapaz de ganar
+
+un punto porcentual y este juego es
+
+monte sumas revenge
+
+podría sentarme aquí a explicar porque
+
+creo que este juego es bastante
+
+complicado de ser resuelto pero creo que
+
+la mejor manera de entenderlo es
+
+empatizando con estos algoritmos y es
+
+por ello que les quiero enseñar cuál fue
+
+mi primera experiencia jugando a este
+
+juego vale vamos a hacer la primera
+
+prueba el juego lo pueden encontrar en
+
+esta página web donde tienen bastantes
+
+juegos de la tarea donde pueden probar y
+
+vamos a poner esto en pantalla completa
+
+la calidad es un poco pésima pero bueno
+
+no pasa nada vale famoso a montes o más
+
+revenge creo que me pongo él con las
+
+teclas vale perfecto
+
+vale bien primera muerte
+
+vale puedo bajar por la escalera
+
+vale esto se mueve solo o sea si dejo de
+
+pulsar esto se movería solo aquí ya veo
+
+que bueno hay daño por caída si me
+
+cayera aquí seguramente también moriría
+
+imagínate que tengo que saltar aquí el
+
+allianz a vale no se salta con la tecla
+
+para arriba buenísima pero vamos de
+
+nuevo si yo fuera un algoritmo ahora de
+
+aprendizaje reforzado pues en base a
+
+este ensayo y error pues yo estaría
+
+aprendiendo cómo son los controles de
+
+este juego ahora yo lo tengo un poco
+
+fácil porque tengo un cierto
+
+conocimiento a priori de cómo funcionan
+
+los juegos por ejemplo sé que pulsando
+
+espacio
+
+efectivamente voy a poder saltar
+
+entonces vamos a acertar aliana no se
+
+siente que para se coge solo perfecto
+
+puedo subir y bajar por la liana le
+
+damos a espacio un nuevo salto para acá
+
+vale vamos a bajar por la escalera
+
+también entiendo que esto es una
+
+escalera por mi conocimiento a priori de
+
+otros juegos con lo cual también sé que
+
+puedo moverme de abajo a arriba es otra
+
+facilidad que yo tendría valor hay que
+
+saltar esto sin ok buenísima a mira vale
+
+por ejemplo cuando cuando matas a un
+
+enemigo pues el enemigo desaparece esto
+
+es un conocimiento que acabo de adquirir
+
+ahora
+
+a la experiencia vale esa no la quise
+
+acceder al se me olvidó que es con
+
+espacio para saltar quiero a ver si
+
+podemos para acá vale esta es una de las
+
+puertas entiendo que es abrirá con la
+
+llave que tengo ahí abajo
+
+voy a bajar para acá saltamos la liana
+
+bajamos la escalera
+
+corremos para acá ya no está el enemigo
+
+escogemos la llave y aquí por primera
+
+vez veo que he tenido una recompensa de
+
+100 puntos vale no ha sido este momento
+
+hasta que el juego me ha recompensado
+
+con 100 puntos todo lo que estaba
+
+haciendo antes lo estaba haciendo pues
+
+un poco por mi conocimiento de cómo
+
+funcionaría los juegos convencionales
+
+pero un algoritmo de aprendizaje cada
+
+uno quería un aprendizaje reforzado no
+
+tendría por qué saber todo este
+
+conocimiento avale mirar la sesión vale
+
+entiendo que estoy perdiendo vidas y que
+
+dentro de poco me van a reiniciar el
+
+estado vale efectivamente también para
+
+abrir una puerta pues me dan 300 puntos
+
+vale esto es una escalera
+
+no tengo muy claro hacia dónde tendría
+
+que moverme y estoy moviéndome por
+
+habitaciones esto también me da
+
+recompensa parece que es bueno y aquí me
+
+encuentro con un muro no sé si hay
+
+alguna tecla especial que pueda pulsar
+
+como ven se trata de un juego bastante
+
+variado donde tienes que ir haciendo
+
+mucho ok
+
+genial vale creo que acabo de morir y
+
+una vez muero que pasa vale se reinicia
+
+el juego entero y se reinicia toda la
+
+sesión con todos los enemigos y todos
+
+como pueden ver se trata de un juego muy
+
+complejo con una gran variedad de
+
+dinámicas donde muchas de las decisiones
+
+que he tomado creo que han sido en base
+
+al conocimiento a priori que yo tenía de
+
+mi experiencia jugando a videojuegos lo
+
+que quiere decir que si tú quieres
+
+aprender a jugar este juego bien
+
+requerirán múltiples sesiones de ensayo
+
+y error donde posiblemente mueras
+
+muchísimas veces si lo pensamos desde un
+
+punto de vista del aprendizaje reforzado
+
+el motivo por el cual este juego de aquí
+
+es fácil de resolver y este de aquí no
+
+lo es es porque éste tiene una capacidad
+
+de recompensar a la gente mucho más
+
+rápida y directa sobre las acciones que
+
+él realiza aquí cada vez que la gente
+
+golpea bien la bola y éste rompe un
+
+bloque y la gente recibe una señal de
+
+recompensa que le indica que lo que ha
+
+hecho está bien por el contrario en el
+
+caso de montezuma solamente en la
+
+primera pantalla para no cagarla tienes
+
+que bajar una escalera no quedarte
+
+quieto saltaron a liam a bajar
+
+a moverte a la izquierda saltar una
+
+calavera que se mueve subir una escalera
+
+ una llave y será en ese momento
+
+cuando tú recibas una señal de
+
+recompensa que te indique que todo lo
+
+que has hecho está bien claro para un
+
+algoritmo que se basa en ensayo y error
+
+y tenga que explorar todas las posibles
+
+opciones que puedes realizar en ese
+
+entorno esto hace el juego bastante
+
+complicado este problema que nos estamos
+
+refiriendo se conoce como hard
+
+exploration problema o problema de
+
+exploración compleja y básicamente se
+
+produce porque aquí la recompensa es
+
+bastante escasa o está bastante dispersa
+
+este concepto de la recompensa escasa o
+
+dispersa es un concepto que se investiga
+
+bastante dentro del área del aprendizaje
+
+reforzado porque realmente la gran parte
+
+de problemas que nos encontramos en el
+
+mundo real se basan en esto es decir
+
+muchas de las decisiones que tomamos en
+
+nuestro día a día no tienen como
+
+resultado una recompensa inmediata sino
+
+que tenemos que esperar a que se
+
+produzca una concatenación de eventos
+
+hasta que esa recompensa nos llegue y
+
+sepamos si lo que hemos hecho está bien
+
+o mal es por eso que este concepto tenga
+
+tanta importancia dentro del área del
+
+aprendizaje reforzado y que este juego
+
+se vuelva como un desafío muy
+
+interesante a resolver
+
+y es por eso que ahora que entendemos
+
+todo el contexto que envuelve a este
+
+juego que se hace interesante
+
+preguntarse cómo ha sido que google labs
+
+con su algoritmo go explore ha resuelto
+
+un juego que en 2018 solamente había
+
+sido superado el primer nivel por un
+
+único algoritmo con 17.500 puntos ahora
+
+gracias a go explorer hemos llegado a
+
+alcanzar hasta el nivel 159 y hemos
+
+alcanzado 2 millones de puntos así que
+
+la pregunta es cómo lo han hecho
+
+[Música]
+
+vale
+
+para entenderla mejor introducida en
+
+este trabajo lo primero que tenemos que
+
+hacer es volver al concepto de
+
+recompensa dispersa que hemos mencionado
+
+previamente en el campo de aprendizaje
+
+reforzado es habitual intentar resolver
+
+este problema mediante un mecanismo
+
+denominado recompensa intrínseca es
+
+decir que la gente inteligente no sólo
+
+se vea recompensado cada vez que el
+
+entorno de simulación lo considere
+
+porque como hemos visto en muchos casos
+
+esta recompensa puede ser muy dispersa
+
+sino que la gente también pueda
+
+experimentar algún tipo de recompensa
+
+por el simple hecho de lanzarse a
+
+explorar o tener curiosidad o encontrar
+
+nuevos estados dentro de la simulación
+
+imagínate por ejemplo una versión del
+
+juego de pac man donde pacman sólo
+
+consigue recompensa es decir que sólo
+
+suban puntos a su marcador cada vez que
+
+se consiga comer una fruta en este caso
+
+un mecanismo de recompensa intrínseca
+
+sería establecer en todo el mapa estas
+
+bolas de puntos que normalmente nos
+
+encontramos
+
+pacman así se verá motivado para
+
+explorar todo el mapa y así ir comiendo
+
+poco a poco toda la bola de punto y será
+
+un tipo de motivación intrínseca que le
+
+permitirá moverse y no quedarse quieto
+
+en su sitio como digo este tipo de
+
+mecanismos de motivación intrínseca son
+
+utilizados en set apps de aprendizaje
+
+reforzado y es el punto de partida para
+
+los investigadores de uber lapse que se
+
+plantea en el siguiente problema
+
+imagínate que el entorno de simulación
+
+se representa por el siguiente mapa
+
+donde tu agente se encuentra justo en el
+
+medio de estos dos laberintos para
+
+favorecer la exploración de la gente
+
+pues podemos introducir recompensas
+
+intrínsecas a lo largo de todas las
+
+zonas no exploradas representado aquí en
+
+verde de manera aleatoria la gente
+
+decidirá ir por el laberinto de la
+
+izquierda y poco a poco irá explorando y
+
+recibiendo recompensa por su curiosidad
+
+esto será así hasta que llegados a un
+
+punto puesto que la gente al final toma
+
+decisiones de manera aleatoria quizás
+
+acabe dándose la vuelta y volviendo al
+
+punto inicial y encontrándose con el
+
+laberinto de la derecha donde podrá
+
+continuar su exploración alimentándose
+
+de esa señal de motivación intrínseca
+
+que hay en el laberinto y aquí es donde
+
+ellos ven el gran problema y punto de
+
+partida de su hipótesis y es que un
+
+agente inteligente como tú por ejemplo
+
+si estuvieras haciendo este tipo de
+
+exploración en un juego una vez acabes
+
+con esta zona recordarás que antes
+
+dejaste es una zona potencialmente
+
+interesante sin explorar y por tanto
+
+volverías a ella sin embargo en este
+
+caso este agente de aquí ya no tendría
+
+una motivación para querer explorar
+
+estas zonas puesto que ya no encuentran
+
+señal de recompensa que le motiva a
+
+llegar a ese punto es decir el problema
+
+el de hitachi en lo que nos presenta es
+
+una situación en la que zonas con
+
+posibilidad de exploración se vuelven
+
+potencialmente poco interesantes para la
+
+gente inteligente que habrá olvidado que
+
+ahí había algo interesante que explorar
+
+y al final es la solución a este
+
+problema la principal mejora introducida
+
+por este trabajo como lo hacen pues de
+
+una manera muy intuitiva y bastante
+
+parecida a ese símil que habíamos
+
+planteado de un jugador que recuerda que
+
+ha dejado una zona sin explorar y que
+
+tiene que volver a visitarla en este
+
+caso lo que hace la gente inteligente es
+
+mantener un archivo de aquellos estados
+
+de la simulación es decir aquellas zonas
+
+que ha explorado previamente y que va a
+
+utilizar para seleccionar aleatoriamente
+
+y dando prioridad a aquellas nuevas una
+
+nueva zona donde moverse y poder seguir
+
+explorando y descubriendo cosas pero
+
+claro antes cuando hablamos de recordar
+
+que tenías que volver una zona del juego
+
+estamos hablando de la representación
+
+mental que tú como humano te haces de
+
+ese juego es como si te digo que
+
+recuerdes cómo era pueblo paleta en el
+
+primer pokemon la casa de as que tube tu
+
+si lo intentará pensar ahora segura
+
+sería una representación difusa de la
+
+zona pero sabrías a lo que te estás
+
+refiriendo cómo podemos conseguir
+
+representar ese estado dentro de nuestra
+
+simulación para que la gente pueda
+
+entender que tiene que volver a una
+
+determinada zona aquí en este caso para
+
+hacer esta representación del juego
+
+muchos algoritmos de aprendizaje
+
+reforzado utilizan métodos que pueden ir
+
+hasta cosas complejas como utilizar
+
+redes neuronales convolución ales que
+
+aprenden a representar en un estado
+
+latente el estado actual del juego a
+
+partir de los píxeles recibidos por una
+
+imagen pero en este caso en el go
+
+explorer del método que utilizan es
+
+bastante rudimentario y bastante simple
+
+lo único que están haciendo aquí es
+
+ la imagen que tenemos en pantalla
+
+y hacer un downgrade es decir bajarle la
+
+calidad de píxeles hasta generar un mapa
+
+de bits de 11 x 8 píxeles con una escala
+
+de grises de 8 bits y será solamente con
+
+este mapa de píxeles que han generado
+
+con el cual van a representar todos los
+
+estados diferentes del juego lo cual es
+
+bastante sorprendente que funcione pero
+
+a priori parece que lo hace aunque este
+
+es un punto en el que vamos a volver
+
+dentro de poco complementario a esto
+
+también introduce en una segunda
+
+denominada fase de robusti ficación que
+
+lo que busca es hacer el sistema más
+
+robusto frente a posibles perturbaciones
+
+que se puedan dar en el entorno de
+
+simulación de todos modos ya esto no nos
+
+vamos a meter a explicarlo porque sino
+
+el vídeo se va a quedar más largo de lo
+
+que está quedando por tanto al final lo
+
+que parece que están proponiendo en este
+
+trabajo es una especie de exploración
+
+exhaustiva dentro del árbol de búsqueda
+
+en el que estamos dando posibilidad a la
+
+gente de saltar de una rama a otra según
+
+su conveniencia y esto aunque sea muy
+
+rudimentario parece que funciona bien y
+
+parece que consigue un récord y un
+
+estado del arte muy por encima de lo que
+
+se había conseguido con otras
+
+investigaciones
+
+[Música]
+
+y es quizás por esto mismo por esta
+
+simpleza en las técnicas utilizadas y
+
+por lo sorprendente de los resultados
+
+que mucha gente se ha sentido interesada
+
+por este trabajo y le han puesto el ojo
+
+encima encontrando algunos puntos que
+
+generan controversia por ejemplo uno de
+
+los puntos que se le ha criticado ha
+
+sido el sistema que ha utilizado para
+
+codificar los estados dentro de la
+
+simulación haciendo el down sampling
+
+porque claro puede que dentro de un
+
+juego del atari 2600 este sistema sí te
+
+sirva es decir reducir todo el contenido
+
+de tu pantalla a un mapa de 11 x 8 a lo
+
+mejor podría ser factible dentro de
+
+estos juegos donde en pantalla realmente
+
+no hay una gran variación de las
+
+intensidades de los píxeles y hay muy
+
+pocos elementos en pantalla pero el
+
+problema es que esto cuando te lo llevas
+
+a otros sistemas como por ejemplo una
+
+simulación en 3d o simulador es más
+
+complejos puede que no sea un sistema
+
+tan generalizable y esto es algo que se
+
+le ha criticado y quizás este punto no
+
+sea tan problemático porque incluso
+
+ellos mismos han reconocido que el
+
+sistema que utilizan es bastante
+
+y que otros más avanzados se podrían
+
+utilizar que puede que sean más
+
+generalizables lo que sí puede ser
+
+criticable de este aspecto es que ellos
+
+han realizado varios experimentos en
+
+algunos de ellos no solamente han
+
+codificado la imagen que tenían en
+
+pantalla sino que también han
+
+introducido alguna información extra que
+
+permitía que el sistema pudiera aprender
+
+mejor ejemplos de la información que han
+
+codificado ha sido por ejemplo la
+
+posición en coordenadas xe y del
+
+personaje principal o el número de
+
+llaves que portaba o el número de
+
+habitaciones en la que se encontraba o
+
+el número del nivel en el que se
+
+encontraba claro si tú le facilita a la
+
+gente esta información esto va a
+
+permitir que él pueda tener un
+
+rendimiento mejor pero qué pasa que esta
+
+información solamente es útil para este
+
+juego y por tanto no va a ser
+
+generalizable para otros casos es decir
+
+es como que le estamos dando pistas de
+
+lo que necesitará utilizar para poder
+
+aprender a desenvolverse pero no es algo
+
+que él haya aprendido solo con lo cual
+
+cuando nos llegamos a este sistema a
+
+otro juego diferente necesitaremos que
+
+haya un investigador que introduzca esta
+
+información para que la gente pueda
+
+desarrollarse bien y claro esto tampoco
+
+tiene que ser un punto
+
+problemático porque al final bueno han
+
+hecho varios experimentos y
+
+efectivamente aún así ha sido con
+
+información complementaria y otros en
+
+información complementaria como es obvio
+
+aquellos con información complementaria
+
+van a tener un resultado muy muy por
+
+encima de los que no tengan información
+
+complementaria
+
+pero claro el problema no es ese el
+
+problema es que ellos para publicitar su
+
+trabajo han utilizado los resultados con
+
+información complementaria y eso sea
+
+algo que se le puede criticar cuando
+
+comparamos ambos resultados pasamos de
+
+tener una puntuación máxima de 2
+
+millones de puntos que era la que nos
+
+estamos refiriendo en un principio a
+
+tener solamente una puntuación máxima de
+
+35 mil puntos que aún así sigue siendo
+
+una puntuación por encima del estado del
+
+arte que se había conseguido hasta el
+
+momento pero claro no son 2 millones de
+
+puntos
+
+la otra cosa que nos queda los
+
+investigadores es la forma en la que el
+
+sistema hace para volver a aquellos
+
+estados en los que la gente ha estado
+
+previamente si recuerdas antes te
+
+explicado que la gente puede volver a un
+
+punto previamente visto pero ningún
+
+momento te explicado cómo lo hace
+
+imagínate que yo ahora soy un agente y
+
+que me muevo del estado a al estado ve
+
+ahí si quisiera volver de nuevo al
+
+estado a porque quiero retomar la
+
+exploración a partir de ese punto pues
+
+lo puedo hacer de tres maneras
+
+diferentes una de ellas sería
+
+simplemente memorizar y rehacer aquellos
+
+movimientos que te han llevado de un
+
+estado al otro
+
+y claro si esto es una opción pues
+
+también otra cosa que se podría hacer es
+
+directamente resetear todo el entorno de
+
+simulación al estado que justamente
+
+quieres alcanzar esto lo que te va a
+
+permitir volver al estado previo que
+
+quisieras sin toda la sobrecarga de
+
+tener que simular todo el recorrido de
+
+vuelta esto es como cuando en el pasado
+
+guardaban la partida antes de
+
+enfrentarte al boss final y cagarla
+
+efectivamente lo mismo claro estas dos
+
+opciones son solamente factibles si te
+
+encuentras dentro de un entorno de
+
+simulación determinista es decir un
+
+entorno de simulación donde tú sepas que
+
+las acciones que vas a realizar
+
+te van a llevar con seguridad al estado
+
+que tú quieres en este ejemplo si nos
+
+imaginamos que en el proceso de movernos
+
+de un estado a otro hay algún fenómeno
+
+aleatorio por ejemplo una compuerta en
+
+el suelo que se abre y se cierra de
+
+manera aleatoria
+
+no podemos asegurarnos que al repetir
+
+los movimientos hacia atrás éstos nos
+
+vayan a llevar al mismo estado aquí la
+
+solución sería pues entrenar al sistema
+
+para que también pueda aprender a volver
+
+a los estados que queramos y claro la
+
+cosa de este asunto es que en este
+
+trabajo solamente se han limitado a
+
+hacer pruebas en los dos primeros casos
+
+optando realmente por la opción de
+
+resetear el entorno
+
+algo que tiene su controversia la
+
+crítica esto es que entonces a priori el
+
+sistema que ellos están presentando sólo
+
+funcionaría de momento en entornos de
+
+simulación que sean no estocástico es
+
+decir que sean deterministas y esto pues
+
+nos aleja bastante de las situaciones
+
+reales que nos encontramos en el día a
+
+día piensa por ejemplo un robot que
+
+tenga que aprender a realizar una tarea
+
+en un entorno donde exista simplemente
+
+viento esta componente ya va a ser una
+
+componente estocástica de la cual no
+
+tenemos la seguridad que este sistema go
+
+explore puede aprender a resolver este
+
+problema no sólo se limita a que no
+
+puede haber una transferencia de
+
+conocimiento de un entorno determinista
+
+a un entorno estocástico sino que
+
+también se conoce que cuando tú entrena
+
+a un agente inteligente en un entorno
+
+determinista éste puede desarrollar un
+
+comportamiento que exploté en su
+
+beneficio este determinismo para obtener
+
+resultados que realmente son muy buenos
+
+pero que en realidad son irreales y es
+
+por eso que desde 2017 se viene
+
+utilizando una serie de técnicas que lo
+
+que buscan es introducir esa componente
+
+estocástico dentro de tu simulación
+
+determinista algo que se conoce como
+
+sticky actions
+
+y aquí el nombre es perfecto porque
+
+sticky actions acciones pegajosas viene
+
+a ser un mecanismo que te introduce una
+
+pequeña probabilidad aleatoria de que tu
+
+agente inteligente vuelva a repetir la
+
+última acción que ha hecho haciendo que
+
+su comportamiento pues ya no sea
+
+determinista claro esto se asemeja
+
+bastante a cuando tienes un joystick
+
+antiguo y se te queda atascado en uno de
+
+los movimientos en esta situación pues
+
+ya te puedes imaginar que un agente
+
+inteligente que dé un paso hacia
+
+adelante tiene una pequeña probabilidad
+
+de dar otro paso más con suerte espero
+
+que no sea hacia un precipicio con esta
+
+simple técnica porque tenemos un sistema
+
+bastante sencillo que nos permite
+
+introducir aleatoriedad en el entorno de
+
+simulación que hace que el sistema sea
+
+no determinista y que por tanto la gente
+
+no se pueda beneficiar de esto el
+
+problema aquí es que ellos no han
+
+utilizado este mecanismo y esto hace que
+
+la comparación que ellos realizan con el
+
+resto de algoritmos no sea justa desde
+
+un principio a todas estas críticas los
+
+autores han ido actualizando su propio
+
+artículo en las semanas posteriores se
+
+han ido presentando resultados pues
+
+utilizando este que actions y haciendo
+
+una especie de reflexión debate sobre el
+
+uso determinismo
+
+en cualquier caso todo esto está basado
+
+en un artículo de un blog y no en un
+
+paper científico es decir que ésta no ha
+
+pasado el filtro de la comunidad
+
+científica y por tanto hay que
+
+mantenerlo un poco en cuarentena yo
+
+simplemente hoy pues quería comentar
+
+todo este sistema porque además de que
+
+me lo habéis pedido ustedes los patriots
+
+y por eso me lo ha querido preparar
+
+también creo que era un tema interesante
+
+tratar en el canal porque nos introduce
+
+a conceptos que a lo mejor no son
+
+familiares para muchos de nosotros que
+
+nos dedicamos a pues al tema del buy in
+
+learning más tradicional por así decirlo
+
+al análisis supervisado y no supervisado
+
+en ese sentido pues si les ha interesado
+
+el tema y no quieren mantenerse en este
+
+en este algoritmo en el go explore hasta
+
+que ellos saquen una publicación final
+
+pues les invito a consultar el paper
+
+publicado en creo que fue julio del año
+
+pasado por open y hai que sería el
+
+estado del arte previo al de go explore
+
+y es un artículo que podrán encontrar
+
+aquí abajo en la descripción que les he
+
+puesto todos los links de las cosas que
+
+hablando
+
+y que es un artículo pues que también
+
+resuelve el monte sumas revenge de una
+
+manera muy interesante eso si quieren
+
+mirar hacia atrás si quieren mirar hacia
+
+adelante les recomiendo que visiten otro
+
+link que van a encontrar en la cajita de
+
+descripción que es un sistema que ha
+
+implementado la gente de juniti
+
+planteando un reto un chile ntx de un
+
+juego que está basado en el monte so más
+
+revenge pero una versión tridimensional
+
+que ahora mismo no recuerdo cómo lo han
+
+llamado pero bueno estarán viendo en
+
+pantalla esas imágenes y pues pues ya
+
+está que más quieres ya está el vídeo ya
+
+se ha acabado ya ya ni más ya creo que
+
+hemos sacado todo el aspecto técnico
+
+posible ha habido y por haber de este
+
+artículo ya es que no me queda ni café
+
+que es que más quieres qué más quieres
+
+nada más chico es de me señal positiva
+
+de recompensa dándole a like a este
+
+vídeo si te ha gustado que sepan que
+
+pueden apoyar el contenido de este canal
+
+posiblemente de los pocos en youtube que
+
+se metan a hablar de aspectos técnicos
+
+de inteligencia artificial es con este
+
+nivel de profundidad en español
+
+y eso pues si lo consideran interesante
+
+pues lo pueden apoyar a través de patrón
+
+y así podrán también poder votar los
+
+futuros temas que quieren que traten que
+
+trate y yo en el canal así que nada
+
+tenéis abajo todos los links a mis redes
+
+sociales patrio en twitter tweet también
+
+muchas muchas muchas cosas más
+
+suscríbete si te ha gustado y bueno
+
+hasta el siguiente vídeo adiós
+
+zuma
+
+[Música]
+
+i
+
+
